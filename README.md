@@ -1,8 +1,8 @@
-##Fullstack Engineer Interview Project: Amazon-like Marketplace
-#Project Overview
+## Fullstack Engineer Interview Project: Amazon-like Marketplace
+# Project Overview
 Create a simplified version of an Amazon-like marketplace using Next.js, React, MikroORM, and Next UI components. The project should include a homepage and a product page.
 
-#Technical Stack
+# Technical Stack
 Frontend: React with Next.js
 Backend: Next.js API routes
 Database: Any database of your choice (e.g., PostgreSQL, MySQL, SQLite)
@@ -10,7 +10,7 @@ ORM: MikroORM
 UI Components: Next UI
 Styling: Tailwind CSS
 
-#Features
+# Features
 
 Homepage
 - Header with logo and navigation menu
@@ -31,15 +31,17 @@ Product Page
     - Description
     - "Add to Cart" button (again, non functional)
 
-##Setup Instructions
+## Setup Instructions
 
 Clone the repository:
-`git clone <repository-url>`
-`cd <repository-directory>`
+`git clone https://github.com/Swastik3/MarketPlace.git`
+`cd MarketPlace`
 
 
 Use the mongoDB URI in the email and create a `.env` file in `amazonreplica` (the root NextJS directory)
 `CLIENT_URI = <uri_in_the_email>`
+
+`cd amazonreplica`
 
 Install all the dependencies: `npm install`
 
@@ -47,7 +49,7 @@ Start the dev server: `npm run dev`
 
 Navigate to `http://localhost:3000` in your browser to view the application.
 
-##NOTES:
+## NOTES:
 
 This was my first time using this tech stack: NextJS, TypeScript, Next UI and MikrORM. I have worked with tailwindCSS and MongoDB in the past and I am quite familiar with React and JavaScript in general which is why I could understand the implementation of this tech stack.
 
@@ -59,7 +61,7 @@ Here are some of the steps that I took and the entire roadmap of this developmen
 - Set up API routes to fetch data from the DB 
 - Made the website repsonsive
 
-##Implementation shortcomings:
+## Implementation shortcomings:
 I do want to take a bit of time to explain the issues with the current state of this project. Having only started with Nextjs, here are the following things I could not implement in this timeframe:
 - Pagination (partly because after the first 16 dummy data units, the rest are nonsencial)
 - Add to Cart: since I could not implement authentication in this time, adding to cart did not make sense since there was no associated user to add the product to.
