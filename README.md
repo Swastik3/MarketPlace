@@ -35,13 +35,15 @@ Product Page
 
 Clone the repository:
 `git clone https://github.com/Swastik3/MarketPlace.git`
+ 
 `cd MarketPlace`
-
+ 
+`cd amazonreplica`
 
 Use the mongoDB URI in the email and create a `.env` file in `amazonreplica` (the root NextJS directory)
 Add the following line in the `.env.` file : `CLIENT_URI = <uri_in_the_email>`
 
-`cd amazonreplica`
+
 
 Install all the dependencies: `npm install`
 
