@@ -35,6 +35,7 @@ Product Page
 
 Clone the repository:
 `git clone https://github.com/Swastik3/MarketPlace.git`
+ 
 `cd MarketPlace`
 
 
