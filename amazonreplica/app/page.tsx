@@ -30,14 +30,11 @@ const HomePage: React.FC = async () => {
         <meta name="description" content="Welcome to MyMarketplace" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Header />
-
-      <main className="container mx-auto mt-8 flex-grow">
+      <main className="container mx-auto mt-4 flex-grow">
         <h1 className="text-center text-3xl font-bold mb-4 ">Featured Products</h1>
         <ProductGrid allProducts={allProducts}/>
       </main>
-      <Footer />
+
     </div>
   );
 };

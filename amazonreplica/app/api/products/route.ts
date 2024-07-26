@@ -10,8 +10,8 @@ export async function GET(request: NextRequest) {
     const orm = await OrmWrapper.getInstance();
     const em = orm.em.fork();
     // Fetch all products
-    const products = await em.find(Product, {}, { limit: 18 });
-    console.log("inside the API call", products.entries())
+    const products = await em.find(Product, {}, {limit: 16});
+
     // Return the products as JSON
     return NextResponse.json({
         allProducts: products,

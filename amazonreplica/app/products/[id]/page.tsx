@@ -32,8 +32,7 @@ const ProductDetail: NextPage<ProductDetailProps>= async ({params}) => {
 
 
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <Header />
+    <div className="min-h-screen">
       <main className="container mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
           <div className="flex flex-col items-center justify-center md:flex-row">
@@ -56,7 +55,6 @@ const ProductDetail: NextPage<ProductDetailProps>= async ({params}) => {
         </div>
 
       </main>
-      <Footer/>
     </div>
   );
 };

@@ -17,19 +17,19 @@ function cleanImageUrl(imageUrl:string) {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
   return (
-    <div className='flex flex-col justify-between'>
+    <div className='flex flex-col justify-between bg-white'>
     <div className="h-[100%] border rounded-lg p-4 hover:shadow-2xl transition-shadow">
       <Link href={`/products/${product.id}`}>
         <div className = 'flex items-center justify-center'>
           <Image
           as={NextImage}
-          width={300}
+          width={200}
           height={200}
           src={cleanImageUrl(product.images[0])}
           alt={product.title} 
           shadow='sm'
           isZoomed={true}
-          fallbackSrc="https://api.api-ninjas.com/v1/randomimage?category=technology"
+          fallbackSrc= "https://placehold.co/200"
         />
         </div>
         <h3 className="text-center text-lg font-semibold mt-2">{product.title}</h3>
