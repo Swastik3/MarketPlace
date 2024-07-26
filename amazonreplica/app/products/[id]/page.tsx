@@ -1,7 +1,6 @@
 import { NextPage } from 'next';
 // import { useRouter } from 'next/navigation';
 import Header from '../../components/Header';
-import { Product } from '../../../types';
 
 interface ProductDetailProps {
   params: {
@@ -14,7 +13,7 @@ const ProductDetail: NextPage<ProductDetailProps>= ({params}) => {
   const id  = params.id;
 
   // In a real app, you'd fetch the product details based on the id
-  const product: Product = {
+  const product = {
     id: id as string,
     name: 'Sample Product',
     price: 99.99,

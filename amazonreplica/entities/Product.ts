@@ -1,27 +1,22 @@
 import { Entity, PrimaryKey, Property } from '@mikro-orm/core';
 import { ObjectId } from '@mikro-orm/mongodb';
-
 @Entity()
 export class Product {
   @PrimaryKey()
-  _id: ObjectId;
+  _id!: ObjectId;
 
   @Property()
-  name: string;
+  id!: number;
 
   @Property()
-  description: string;
+  title!: string;
 
   @Property()
-  price: number;
+  price!: number;
 
   @Property()
-  inStock: boolean;
+  description!: string;
 
-  constructor(name: string, description: string, price: number, inStock: boolean) {
-    this.name = name;
-    this.description = description;
-    this.price = price;
-    this.inStock = inStock;
-  }
+  @Property()
+  images!: string[];
 }
