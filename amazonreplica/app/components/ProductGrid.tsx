@@ -2,11 +2,6 @@ import React from 'react';
 import ProductCard from './ProductCard';
 import { Product } from "../../entities/Product";
 
-type responseData = {
-  allProducts: Product[];
-  message: string
-};
-
 
 const ProductGrid: React.FC<{ allProducts: Product[] }> = async ({ allProducts }) => {
   

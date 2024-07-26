@@ -33,7 +33,7 @@ const HomePage: React.FC = async () => {
       <Header />
 
       <main className="container mx-auto mt-8 flex-grow">
-        <h1 className="text-3xl font-bold mb-4">Featured Products</h1>
+        <h1 className="text-center text-3xl font-bold mb-4 ">Featured Products</h1>
         <ProductGrid allProducts={allProducts}/>
       </main>
       <Footer />

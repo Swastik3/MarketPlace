@@ -7,7 +7,7 @@ const Header: React.FC = () => {
     <header className="bg-yellow-800 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
-          <p className="text-2xl font-bold">MyMarketplace</p>
+          <p className="text-2xl font-bold">Amazon-ish</p>
         </Link>
         <SearchBar />
         <Cart />
