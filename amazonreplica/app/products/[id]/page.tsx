@@ -1,10 +1,17 @@
-import { useRouter } from 'next/router';
+import { NextPage } from 'next';
+// import { useRouter } from 'next/navigation';
 import Header from '../../components/Header';
-import { Product } from '../../types';
+import { Product } from '../../../types';
 
-const ProductDetail: React.FC = () => {
-  const router = useRouter();
-  const { id } = router.query;
+interface ProductDetailProps {
+  params: {
+    id: string;
+  };
+}
+
+const ProductDetail: NextPage<ProductDetailProps>= ({params}) => {
+  // const router = useRouter();
+  const id  = params.id;
 
   // In a real app, you'd fetch the product details based on the id
   const product: Product = {

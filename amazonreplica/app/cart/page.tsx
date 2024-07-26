@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-import { CartItem } from '../types';
+import { CartItem } from '../../types';
 
 const Cart: React.FC = () => {
   // In a real app, you'd manage the cart state and fetch items

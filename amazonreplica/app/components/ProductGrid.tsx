@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductCard from './ProductCard';
-import { Product } from '../types';
+import { Product } from '../../types';
 
 // Mock data - replace with actual data fetching in a real application
 const products: Product[] = [
