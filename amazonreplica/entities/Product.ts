@@ -5,9 +5,11 @@ export class Product {
   @PrimaryKey()
   _id!: ObjectId;
 
-  @Property()
-  id!: number;
-
+  @Property({ persist: false })
+  get stringId(): string {
+    return this._id.toString();
+  }
+  
   @Property()
   title!: string;
 

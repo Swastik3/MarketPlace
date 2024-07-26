@@ -1,12 +1,21 @@
 import Header from '../components/Header';
-import { CartItem } from '../../types';
 
+interface CartItem {
+  id: string;
+  name: string;
+  price: number;
+  quantity: number;
+  image: string;
+  description: string;
+}
 const Cart: React.FC = () => {
   // In a real app, you'd manage the cart state and fetch items
   const cartItems: CartItem[] = [
     { id: '1', name: 'Product 1', price: 19.99, quantity: 2, image: '/images/product1.jpg', description: 'Description 1' },
     { id: '2', name: 'Product 2', price: 29.99, quantity: 1, image: '/images/product2.jpg', description: 'Description 2' },
   ];
+
+
 
   const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
 

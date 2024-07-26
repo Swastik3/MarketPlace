@@ -5,7 +5,8 @@ import Footer from "./components/Footer";
 import ProductGrid from "./components/ProductGrid";
 // import CategoryNav from './components/CategoryNav';
 import OrmWrapper from "../lib/mikro-orm";
-import { Product } from "../entities/Product";
+import { Product } from "../types/Product";
+
 type responseData = {
   allProducts: Product[];
   message: string

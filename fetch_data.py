@@ -12,13 +12,14 @@ for product in all_products:
     if len(product["images"]) == 1:
         product["images"][0] = product['images'][0].strip('[').strip(']').strip('"')
     product["price"] = float("{:.2f}".format(product["price"]))
+    product.pop('id', None)
     product.pop("category", None)
     product.pop("creationAt", None)
     product.pop("updatedAt", None)
 
 print(all_products[0])
 # removed my mongoDB details
-uri = 'mongodb+srv://swastikagrawal3:9GYIvAzRlACEc2pO@amazonreplica.ptw1q1v.mongodb.net/?retryWrites=true&w=majority&appName=AmazonReplica'
+uri = 'mongodb+srv://<username>:<password>@<cluster>/<database>?retryWrites=true&w=majority'
 
 
 client = MongoClient(uri, server_api=ServerApi('1'))
