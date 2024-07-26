@@ -3,9 +3,7 @@ import Head from 'next/head';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ProductGrid from './components/ProductGrid';
-import CategoryNav from './components/CategoryNav';
-import { MikroORM } from '@mikro-orm/mongodb';
-import mikroOrmConfig from '../mikro-orm.config.js';
+// import CategoryNav from './components/CategoryNav';
 import OrmWrapper from '../lib/mikro-orm';
 import { Product } from '../entities/Product';
 
@@ -37,11 +35,9 @@ const HomePage: React.FC = async() => {
       <Header />
 
       <main className="container mx-auto mt-8 flex-grow">
-        <CategoryNav />
         <h1 className="text-3xl font-bold mb-4">Featured Products</h1>
         <ProductGrid />
       </main>
-
       <Footer />
     </div>
   );

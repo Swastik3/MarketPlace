@@ -10,7 +10,8 @@ all_products = requests.get("https://api.escuelajs.co/api/v1/products").json()
 print(all_products)
 
 # removed my mongoDB details
-uri = "mongodb+srv://<username>:<password>@cluster0.7zv8z.mongodb.net/<dbname>?retryWrites=true&w=majority"
+uri = '<client_uri>'
+
 
 client = MongoClient(uri, server_api=ServerApi('1'))
 
@@ -18,7 +19,7 @@ try:
     client.admin.command('ping')
     print("Pinged your deployment. You successfully connected to MongoDB!")
 
-    client.amazon.products.insert_many(all_products)
+    # client.amazon.products.insert_many(all_products)
     print("Inserted product into the database")
 
 except Exception as e:
