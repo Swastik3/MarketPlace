@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { MikroORM, EntityManager } from '@mikro-orm/core';
 import { Product } from '../../../entities/Product'; // Adjust this import path
 import OrmWrapper from '../../../lib/mikro-orm';
 
